@@ -255,7 +255,7 @@ request with new package. Pay attention to things listed below.
    equivalents. Termux installation prefix is
 
    ```
-   /data/data/com.termux/files/usr
+   /data/data/com dragon.ide/files/usr
    ```
 
    and can be considered as virtual rootfs.
@@ -263,7 +263,7 @@ request with new package. Pay attention to things listed below.
    Home directory is stored outside of prefix:
 
    ```
-   /data/data/com.termux/files/home
+   /data/data/com dragon.ide/files/home
    ```
 
    Don't hardcode home and prefix, use shortcuts `@TERMUX_HOME@` and
