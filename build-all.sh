@@ -71,10 +71,10 @@ trap 'echo ERROR: See $BUILDALL_DIR/${PKG}.err' ERR
 
 while read -r PKG PKG_DIR; do
 	# Check build status (grepping is a bit crude, but it works)
-	if [ -e "$BUILDSTATUS_FILE" ] && grep "^$PKG\$" "$BUILDSTATUS_FILE" >/dev/null; then
-		echo "Skipping $PKG"
-		continue
-	fi
+#	if [ -e "$BUILDSTATUS_FILE" ] && grep "^$PKG\$" "$BUILDSTATUS_FILE" >/dev/null; then
+#		echo "Skipping $PKG"
+#		continue
+#	fi
 
 	echo -n "Building $PKG... "
 	BUILD_START=$(date "+%s")
